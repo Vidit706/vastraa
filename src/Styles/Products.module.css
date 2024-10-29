@@ -1,0 +1,171 @@
+/* .product_container {
+    width: 100%;
+}
+
+.product_count {
+    text-align: left;
+}
+
+.product_main {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.radio {
+    padding-left: 1rem;
+}
+
+.filters {
+    width: 25%;
+   
+    margin: 0.3rem;
+}
+
+.clear {
+    color: rgb(255, 17, 0);
+    font-size: 0.8rem;
+}
+
+.products {
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.productCards {
+ 
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 540px) {
+    .filter {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .filter {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .products {
+        width: 100%;
+      
+        margin: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 700px) {} */
+
+.product_container {
+    width: 100%;
+}
+
+.product_count {
+    text-align: left;
+}
+
+.product_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    width: 100%;
+}
+
+/* filters */
+.radio {
+    padding-left: 1rem;
+}
+
+.filters {
+    width: 25%;
+    margin: 0.3rem;
+}
+
+.clear {
+    color: rgb(255, 17, 0);
+    font-size: 0.8rem;
+}
+
+/* products */
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.productCards {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+/* Responsive Design */
+/* Larger Tablets and below */
+@media screen and (max-width: 1024px) {
+    .product_main {
+        flex-direction: column; /* Stacks filters and products vertically */
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 1rem; /* Adjusts spacing */
+    }
+
+    .productCards {
+        justify-content: center; /* Center product cards */
+    }
+}
+
+/* Small Tablets and Mobile Devices */
+@media screen and (max-width: 768px) {
+    .product_main {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .products {
+        width: 100%;
+    }
+}
+
+/* Mobile Devices (Phones) */
+@media screen and (max-width: 540px) {
+    .filters {
+        font-size: 0.8rem;
+        width: 100%; /* Full-width on mobile */
+    }
+
+    .productCards {
+        gap: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .filters {
+        display: none; /* Hides filters on smaller screens */
+    }
+
+    .productCards {
+        padding: 0.5rem;
+        gap: 0.3rem; /* Reduces gap on very small screens */
+    }
+}

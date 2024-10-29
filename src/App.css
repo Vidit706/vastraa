@@ -1,0 +1,112 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Responsive App Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white;
+  padding: 1rem; /* Adds padding for small screens */
+}
+
+.App-link {
+  color: #61dafb;
+  font-size: calc(12px + 1vmin); /* Ensures the link is always readable */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for additional responsiveness */
+/* Tablets and smaller */
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 50vmin; /* Increases logo size slightly on tablets */
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjusts font size for tablets */
+    padding: 2rem;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .App-logo {
+    height: 60vmin; /* Increases logo size for better visibility on small screens */
+  }
+
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Further reduces font size on mobile */
+    padding: 3rem 1rem; /* Adjusts padding for better spacing */
+  }
+
+  .App-link {
+    font-size: calc(10px + 1vmin); /* Ensures link remains readable */
+  }
+}

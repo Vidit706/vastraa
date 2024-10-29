@@ -1,0 +1,163 @@
+/* Search Input */
+.inp {
+   height: 35px;
+   width: 100%; /* Full width for responsiveness */
+   max-width: 550px; /* Keeps a max width on larger screens */
+   background-color: rgb(245, 245, 246);
+   border: none;
+   border-radius: 5px;
+   padding-left: 3%;
+}
+
+.inp1 {
+   background-color: rgb(245, 245, 246);
+   display: flex;
+   justify-content: space-between;
+   margin-left: 3%;
+   border-radius: 5px;
+   flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+/* Hover Dropdown */
+.link1:hover .ddown {
+   display: block;
+}
+
+.link1 {
+   margin-left: 1%;
+}
+
+.link1 img {
+   margin-right: 20px;
+}
+
+/* Dropdown Menu */
+.ddown {
+   width: 100%;
+   max-width: 1100px; /* Maximum width for larger screens */
+   background-color: white;
+   z-index: 200;
+   margin-top: 15px;
+   position: absolute;
+   display: none;
+   padding-left: 1%;
+   text-align: left;
+}
+
+/* Responsive Flex Containers */
+.flex {
+   display: flex;
+   flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+   justify-content: space-between;
+}
+
+.down > .flex > .a1, 
+.down > .flex > .a2 {
+   width: 100%; /* Full width for smaller screens */
+   max-width: 22%; /* Limits width on larger screens */
+   height: auto;
+   padding: 1rem;
+}
+
+.a1 > ul > :nth-child(1), 
+.a2 > ul > :nth-child(1) {
+   font-size: 14px;
+   font-weight: 700;
+   padding: 12px 0px 10px 0px;
+}
+
+li {
+   cursor: pointer;
+}
+
+li:hover {
+   font-weight: bold;
+}
+
+ul {
+   list-style-type: none;
+}
+
+/* Studio Section */
+.studioImg img {
+   margin: 20px auto;
+   display: block;
+   max-width: 100%;
+}
+
+.studioImg p {
+   text-align: center;
+}
+
+.explore_studio {
+   min-width: 109px;
+   font-size: 14px;
+   font-weight: 600;
+   text-align: center;
+   color: #282c3f;
+}
+
+.explore_studio button {
+   margin-top: 10px;
+   background: white;
+}
+
+/* Right Links */
+.rightLink {
+   font-weight: bold;
+   color: #000000;
+   text-decoration: none;
+   font-size: 12px;
+}
+
+.rightLink:hover {
+   color: crimson;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 1024px) {
+   .inp1 {
+       justify-content: center; /* Centers input elements */
+       margin-left: 0;
+   }
+
+   .ddown {
+       max-width: 90%; /* Adjusts width for smaller screens */
+   }
+
+   .down > .flex > .a1, 
+   .down > .flex > .a2 {
+       width: 45%; /* Increases width for better layout on tablets */
+   }
+}
+
+/* Mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+   .inp {
+       width: 100%; /* Full width on mobile */
+   }
+
+   .inp1 {
+       flex-direction: column; /* Stacks elements vertically */
+       align-items: center;
+   }
+
+   .ddown {
+       width: 100%; /* Full width dropdown for mobile */
+   }
+
+   .down > .flex > .a1, 
+   .down > .flex > .a2 {
+       width: 100%; /* Full width for dropdown content */
+   }
+
+   .link1 {
+       margin-left: 0;
+   }
+
+   .rightLink {
+       font-size: 10px; /* Smaller font size for mobile links */
+   }
+}
